@@ -1,0 +1,19 @@
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">PRINT MEDIA · حلول الطباعة</div>
+      <h1>نطبع أفكارك<br><span>بشكل استثنائي.</span></h1>
+      <p class="hero-copy">نوفر لك أحدث تقنيات الطباعة والمستلزمات الأصلية التي تمنح عملك أداءً ثابتاً ونتائج تليق به.</p>
+      <div class="hero-actions"><%= link_to "استكشف المنتجات", products_path, class: "button orange" %><%= link_to "تواصل عبر واتساب", whatsapp_link, class: "button ghost", target: "_blank", rel: "noopener" %></div>
+    </div>
+    <div class="hero-visual"><img src="https://images.unsplash.com/photo-1562408590-e32931084e23?auto=format&fit=crop&w=1000&q=85" alt="معدات طباعة احترافية"><div class="visual-tag">خبرة موثوقة · جودة مستمرة</div></div>
+  </div>
+</section>
+
+<section class="section"><div class="container"><div class="section-head"><div><div class="eyebrow">اكتشف مجموعتنا</div><h2>كل ما تحتاجه<br>لنتيجة أفضل</h2></div><%= link_to "عرض كل المنتجات ←", products_path, class: "text-link" %></div><div class="category-grid"><% @categories.each do |category| %><%= link_to category_path(category), class: "category-card" do %><h3><%= category.name %></h3><p><%= category.products.size %> منتجات متاحة</p><% end %><% end %></div></div></section>
+
+<section class="section" style="padding-top: 20px"><div class="container"><div class="section-head"><div><div class="eyebrow">مختاراتنا</div><h2>منتجات تستحق<br>أن تكون في عملك</h2></div><p class="section-intro">منتجات مختارة بعناية من علامات تجارية موثوقة لتمنحك أداءً يعتمد عليه كل يوم.</p></div><div class="product-grid"><%= render partial: "shared/product_card", collection: @featured_products, as: :product %></div></div></section>
+
+<section class="section why"><div class="container why-grid"><div><div class="eyebrow">لماذا Print Media؟</div><h2>شريكك في كل صفحة<br>وكل مشروع.</h2><p class="section-intro">نحن لا نبيع المعدات فقط، بل نفهم احتياجك ونساعدك على بناء منظومة طباعة أكثر كفاءة.</p><div class="stats"><div class="stat"><strong>15+</strong><span>عاماً من الخبرة</span></div><div class="stat"><strong>24/7</strong><span>دعم واستشارات</span></div></div></div><div class="reason-list"><div class="reason"><div class="reason-icon">◈</div><div><h3>منتجات أصلية موثوقة</h3><p>اختيارات احترافية من علامات عالمية لضمان أفضل أداء.</p></div></div><div class="reason"><div class="reason-icon">◈</div><div><h3>خبرة تفهم احتياجك</h3><p>نساعدك في اختيار الحل المناسب لمساحة عملك وحجم إنتاجك.</p></div></div><div class="reason"><div class="reason-icon">◈</div><div><h3>تواصل سريع ومباشر</h3><p>استشارتك تبدأ برسالة واتساب، وفريقنا جاهز لمساعدتك.</p></div></div></div></div></section>
+
+<section class="cta-band"><div class="container cta-inner"><div><h2>لديك سؤال عن منتج؟</h2><p>أرسل لنا رسالة وسنساعدك في الوصول إلى الخيار الأنسب.</p></div><%= link_to "ابدأ المحادثة ←", whatsapp_link, class: "button", target: "_blank", rel: "noopener" %></div></section>

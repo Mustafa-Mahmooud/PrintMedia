@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="container nav">
+    <%= link_to root_path, class: "brand" do %>
+      <span class="brand-mark">✦</span><span>Print Media</span>
+    <% end %>
+    <nav class="nav-links">
+      <%= link_to "الرئيسية", root_path %>
+      <%= link_to "المنتجات", products_path %>
+      <%= link_to "التصنيفات", categories_path %>
+      <%= link_to "من نحن", about_path %>
+      <%= link_to "تواصل معنا", contact_path %>
+    </nav>
+    <%= link_to "تحدث معنا", whatsapp_link, class: "nav-cta", target: "_blank", rel: "noopener" %>
+  </div>
+</header>

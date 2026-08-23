@@ -1,0 +1,8 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><%= link_to root_path, class: "brand" do %><span class="brand-mark">✦</span><span>Print Media</span><% end %><p>حلول متكاملة لعالم الطباعة، نساعدك على اختيار المعدات والمواد التي ترفع جودة عملك.</p></div>
+    <div><h3>روابط سريعة</h3><p><%= link_to "المنتجات", products_path %><br><%= link_to "التصنيفات", categories_path %><br><%= link_to "من نحن", about_path %></p></div>
+    <div><h3>تواصل معنا</h3><p>نحن جاهزون للإجابة عن استفساراتك<br><%= link_to "واتساب مباشر", whatsapp_link, target: "_blank", rel: "noopener" %><br><%= link_to "صفحة التواصل", contact_path %></p></div>
+  </div>
+  <div class="container footer-bottom">© <%= Time.current.year %> Print Media. جميع الحقوق محفوظة.</div>
+</footer>

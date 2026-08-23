@@ -1,0 +1,4 @@
+<article class="product-card">
+  <%= link_to product_path(product) do %><div class="product-image"><%= product_image(product) %></div><div class="product-content"><div class="product-meta"><%= product.category.name %><%= " · #{product.brand.name}" if product.brand %></div><h3><%= product.name %></h3><p><%= product.short_description %></p></div><% end %>
+  <div class="product-content" style="padding-top: 0"><div class="product-actions"><%= link_to "عرض التفاصيل", product_path(product), class: "button ghost" %><%= link_to "واتساب", whatsapp_link(product), class: "button orange", target: "_blank", rel: "noopener" %></div></div>
+</article>

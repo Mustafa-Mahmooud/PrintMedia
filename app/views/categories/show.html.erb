@@ -1,0 +1,1 @@
+<section class="page-hero"><div class="container"><div class="eyebrow">تصنيف المنتجات</div><h1><%= @category.name %></h1><p><%= @category.description %></p></div></section><section class="section"><div class="container"><div class="product-grid"><%= render partial: "shared/product_card", collection: @products, as: :product %></div></div></section>

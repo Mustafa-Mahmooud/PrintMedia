@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  slug: MyString
+  model_number: MyString
+  short_description: MyString
+  description: MyText
+  active: false
+  featured: false
+  category: one
+  brand: one
+
+two:
+  name: MyString
+  slug: MyString
+  model_number: MyString
+  short_description: MyString
+  description: MyText
+  active: false
+  featured: false
+  category: two
+  brand: two

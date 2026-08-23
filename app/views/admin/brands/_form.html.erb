@@ -1,0 +1,1 @@
+<%= form_with model: [:admin, brand] do |form| %><div style="display:grid;gap:15px;max-width:650px"><%= form.label :name, "اسم العلامة" %><%= form.text_field :name, class: "field" %><%= form.label :slug, "الرابط المختصر" %><%= form.text_field :slug, class: "field" %><%= form.submit "حفظ", class: "button orange" %></div><% end %>
