@@ -56,7 +56,7 @@ GEM
       activemodel (= 8.1.3.1)
       activesupport (= 8.1.3.1)
       timeout (>= 0.4.0)
-    activerecord-sqlserver-adapter (8.1.3)
+    activerecord-sqlserver-adapter (8.1.4)
       activerecord (~> 8.1.0)
       tiny_tds (~> 3.0)
     activestorage (8.1.3.1)
@@ -84,7 +84,7 @@ GEM
     base64 (0.3.0)
     bcrypt (3.1.22)
     bcrypt_pbkdf (1.1.2)
-    bigdecimal (4.1.2)
+    bigdecimal (4.1.3)
     bindex (0.8.1)
     bootsnap (1.25.0)
       msgpack (~> 1.5)
@@ -351,9 +351,9 @@ GEM
     thruster (0.1.25)
     thruster (0.1.25-x86_64-linux)
     timeout (0.6.1)
-    tiny_tds (3.4.0-x64-mingw-ucrt)
+    tiny_tds (3.4.1-x64-mingw-ucrt)
       bigdecimal (>= 2.0.0)
-    tiny_tds (3.4.0-x86_64-linux-gnu)
+    tiny_tds (3.4.1-x86_64-linux-gnu)
       bigdecimal (>= 2.0.0)
     tsort (0.2.0)
     turbo-rails (2.0.23)
@@ -366,7 +366,7 @@ GEM
     unicode-display_width (3.2.0)
       unicode-emoji (~> 4.1)
     unicode-emoji (4.2.0)
-    uri (1.1.1)
+    uri (1.1.2)
     useragent (0.16.11)
     warden (1.2.9)
       rack (>= 2.0.9)
@@ -426,7 +426,7 @@ CHECKSUMS
   activejob (8.1.3.1) sha256=1c8dd275df930df40deecffec63d913a550a33fd94bd298f69721dd96939954a
   activemodel (8.1.3.1) sha256=99cc02ce2faec371d14440949d85787ebd23a907c9baef0a9d4bcd4d21888f88
   activerecord (8.1.3.1) sha256=0a2fb6c28f4938f6b013a3a549bec0a7e37d535f3dc8990e804bcc3258c0403b
-  activerecord-sqlserver-adapter (8.1.3) sha256=f7410368b312d6f551b0c463ff2a53b3e52d0bd9315005011d85c88aa325e968
+  activerecord-sqlserver-adapter (8.1.4) sha256=15744e8167db45c02b3e7dbe6467cf2a05792ecddb026015d26fd37617f23c89
   activestorage (8.1.3.1) sha256=f555254f387b1cffa499d2fd3115d12635eadc5b15206a8534316a67036163ef
   activesupport (8.1.3.1) sha256=85458765f25ea48b9019c46b6bb3fa5683197bf4280d9f06710a6e8d7a831376
   addressable (2.9.0) sha256=7fdf6ac3660f7f4e867a0838be3f6cf722ace541dd97767fa42bc6cfa980c7af
@@ -434,7 +434,7 @@ CHECKSUMS
   base64 (0.3.0) sha256=27337aeabad6ffae05c265c450490628ef3ebd4b67be58257393227588f5a97b
   bcrypt (3.1.22) sha256=1f0072e88c2d705d94aff7f2c5cb02eb3f1ec4b8368671e19112527489f29032
   bcrypt_pbkdf (1.1.2) sha256=c2414c23ce66869b3eb9f643d6a3374d8322dfb5078125c82792304c10b94cf6
-  bigdecimal (4.1.2) sha256=53d217666027eab4280346fba98e7d5b66baaae1b9c3c1c0ffe89d48188a3fbd
+  bigdecimal (4.1.3) sha256=61ebe1e5e559bdc3cc6f2c0ee7f427321fc838f59611c294356eb04d6e21cf66
   bindex (0.8.1) sha256=7b1ecc9dc539ed8bccfc8cb4d2732046227b09d6f37582ff12e50a5047ceb17e
   bootsnap (1.25.0) sha256=41059e7d0f9cb4023a33465d095f64b913fc9d1b808d6524c307da945fbcffcf
   brakeman (8.0.6) sha256=759cc69341115e6c2dcd47b6fd8649a0b9bd540e3585ac8a0a94e31c66fee386
@@ -538,15 +538,15 @@ CHECKSUMS
   thruster (0.1.25) sha256=d97d704e91fa37d5858bc238dea6186f7310b633abfeea9f2ba814f252203716
   thruster (0.1.25-x86_64-linux) sha256=e5586003b34dc2f4200f8412101e906621e276bb294d41d1b63a3c41e348503d
   timeout (0.6.1) sha256=78f57368a7e7bbadec56971f78a3f5ecbcfb59b7fcbb0a3ed6ddc08a5094accb
-  tiny_tds (3.4.0-x64-mingw-ucrt) sha256=e35fb3358d68d44fc5f41e590a2d7c1f147bd483d3a51dab23df35a3e1be6022
-  tiny_tds (3.4.0-x86_64-linux-gnu) sha256=56a25e44e8c71432c1e69577cb56893048a949efa7fd839a48efaec88e603b2e
+  tiny_tds (3.4.1-x64-mingw-ucrt) sha256=0290c912b8f550c1123c77563485f75d45f3f454a3719d976f314c5945b37e42
+  tiny_tds (3.4.1-x86_64-linux-gnu) sha256=732de2afa835dec6b0b248d1ce45fa82aa636c62df842507de5f1b2a112d9bc6
   tsort (0.2.0) sha256=9650a793f6859a43b6641671278f79cfead60ac714148aabe4e3f0060480089f
   turbo-rails (2.0.23) sha256=ee0d90733aafff056cf51ff11e803d65e43cae258cc55f6492020ec1f9f9315f
   tzinfo (2.0.6) sha256=8daf828cc77bcf7d63b0e3bdb6caa47e2272dcfaf4fbfe46f8c3a9df087a829b
   tzinfo-data (1.2026.3) sha256=478fbc5356f13c1004cf8372b1336f3dad4055c96340fc4c881a3738da8cf7f9
   unicode-display_width (3.2.0) sha256=0cdd96b5681a5949cdbc2c55e7b420facae74c4aaf9a9815eee1087cb1853c42
   unicode-emoji (4.2.0) sha256=519e69150f75652e40bf736106cfbc8f0f73aa3fb6a65afe62fefa7f80b0f80f
-  uri (1.1.1) sha256=379fa58d27ffb1387eaada68c749d1426738bd0f654d812fcc07e7568f5c57c6
+  uri (1.1.2) sha256=89292e98eabbef6248b0a0ed5e7e398e152f83f17560023a6d94a7f492b169fb
   useragent (0.16.11) sha256=700e6413ad4bb954bb63547fa098dddf7b0ebe75b40cc6f93b8d54255b173844
   warden (1.2.9) sha256=46684f885d35a69dbb883deabf85a222c8e427a957804719e143005df7a1efd0
   web-console (4.3.0) sha256=e13b71301cdfc2093f155b5aa3a622db80b4672d1f2f713119cc7ec7ac6a6da4
